@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center" style="padding: 30px;">
+                    <h1> Tugas Array Bilangan </h1>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 text-center needBorder">
+                            <h3> Array Bilangan Ganjil </h3>
+                        </div>
+                        <div class="col-md-6 text-center needBorder">
+                            <h3> Array Bilangan Genap </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 needBorder">
+                            <h1 id="arrEven"></h1>
+                        </div>
+                        <div class="col-md-6 needBorder">
+                            <h1 id="arrOdd"></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-12 text-center">
+                            <h2><b>=================== Perhitungan ===================</b></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3> Total Array Ganjil </h3>
+                                </div>
+                                <div class="col-md-1 text-center">
+                                    <h3> = </h3>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h3 id="sumarrEven"> </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3> Total Array Genap </h3>
+                                </div>
+                                <div class="col-md-1 text-center">
+                                    <h3> = </h3>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h3 id="sumarrOdd"> </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3> Rata - rata Array Ganjil </h3>
+                                </div>
+                                <div class="col-md-1 text-center">
+                                    <h3> = </h3>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h3 id="avgarrEven"> </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3> Rata - rata Array Genap </h3>
+                                </div>
+                                <div class="col-md-1 text-center">
+                                    <h3> = </h3>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h3 id="avgarrOdd"> </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3> Nilai Minimum dari Array Ganjil </h3>
+                                </div>
+                                <div class="col-md-1 text-center">
+                                    <h3> = </h3>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h3 id="minarrEven"> </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3> Nilai Minimum dari Array Genap </h3>
+                                </div>
+                                <div class="col-md-1 text-center">
+                                    <h3> = </h3>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h3 id="minarrOdd"> </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3> Nilai Maksimal dari Array Ganjil </h3>
+                                </div>
+                                <div class="col-md-1 text-center">
+                                    <h3> = </h3>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h3 id="maxarrEven"> </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3> Nilai Maksimal dari Array Genap </h3>
+                                </div>
+                                <div class="col-md-1 text-center">
+                                    <h3> = </h3>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h3 id="maxarrOdd"> </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-12 text-center">
+                            <h2><b>=================== Perbandingan ===================</b></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-12">
+                            <h2 id="comSum"> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-12">
+                            <h2 id="comAvg"> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-12">
+                            <h2 id="comMin"> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row needBorder">
+                        <div class="col-md-12">
+                            <h2 id="comMax"> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 text-center" style="margin: 15px;">
+                            <button onclick="clearData()" class="btn-lg" id="clearbtn">Clear</button>
+                            <button onclick="run()" class="btn-lg" id="runbtn">Run</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
